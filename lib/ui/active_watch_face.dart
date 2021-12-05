@@ -15,9 +15,8 @@ class ActiveWatchFace extends StatelessWidget {
         builder: (context, shape, child) {
           var screenSize = MediaQuery.of(context).size;
           if (shape == WearShape.round) {
-            // boxInsetLength requires radius, so divide by 2
-            screenSize = Size(boxInsetLength(screenSize.width / 2),
-                boxInsetLength(screenSize.height / 2));
+            screenSize = Size(boxInsetLength(screenSize.width),
+                boxInsetLength(screenSize.height));
           }
           var screenHeight = screenSize.height;
           var screenWidth = screenSize.width;

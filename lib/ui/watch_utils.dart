@@ -1,1 +1,1 @@
-double boxInsetLength(double radius) => radius * 1.4142;
+double boxInsetLength(double diameter) => diameter * 0.7071;
